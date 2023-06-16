@@ -25,17 +25,17 @@ REGISTER
 •	URL		: /user/signup
 •	Method		: Post
 •	Req Body	: 
--	name: as string
--	email: as string, must be unique 
--	password: as string, min 8 chars
--	confirmPassword: must be same as password
+name: as string
+email: as string, must be unique 
+password: as string, min 8 chars
+confirmPassword: must be same as password
 xxx
 LOGIN
 •	URL		: /user/login 
 •	Method		: POST
 •	Req Body	: 
--	name: as string
--	password: as string
+name: as string
+password: as string
 xxx
 LOGOUT
 •	URL		: /user/logout
