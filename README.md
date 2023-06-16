@@ -25,10 +25,10 @@ REGISTER
 - URL		    : /user/signup
 - Method		: Post
 - Req Body	: 
-name: as string
-email: as string, must be unique 
-password: as string, min 8 chars
-confirmPassword: must be same as password
+1. name: as string
+2. email: as string, must be unique 
+3. password: as string, min 8 chars
+4. confirmPassword: must be same as password
 xxx
 LOGIN
 •	URL		: /user/login 
