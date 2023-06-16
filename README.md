@@ -20,11 +20,11 @@ We use Express framework, Typescript, and Sequelize for ORM.
 ENDPOINT:
 https://calowry.et.r.appspot.com/
 
-//USER
+**USER**
 REGISTER
-•	URL		: /user/signup
-•	Method		: Post
-•	Req Body	: 
+- URL		    : /user/signup
+- Method		: Post
+- Req Body	: 
 name: as string
 email: as string, must be unique 
 password: as string, min 8 chars
