@@ -58,7 +58,7 @@ UPDATE USER
 1. name: as string
 2. password: as string, min 8 chars
 3. Headers	: Authorization Bearer <token>
-xxx
+
 UPDATE ADDITIONAL INFO (AGE. HEIGHT, WEIGHT)
 - URL		: /user/:id/additional-info
 - Method		: POST
