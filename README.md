@@ -9,9 +9,8 @@ ___
 computing team working together to take advantage of cloud technology. We include a cloud architect explaining about cloud infrastructure.
 Cloud Computing team is responsible for:
 - Backend Developer for designing and implementing the server-side logic and APIs required for the apps :
-1.Made login login API to do the user registration.
-2.Made user login API.
-3.Madee API time for charts. 
+1.Create user management API.
+2.Make use of cloud vision API.
 - Provide ongoing monitoring, maintenance, and support for the app in the cloud environment. 
 We use Express framework, Typescript, and Sequelize for ORM.
 
@@ -31,74 +30,74 @@ REGISTER
 4. confirmPassword: must be same as password
 xxx
 LOGIN
-•	URL		: /user/login 
-•	Method		: POST
-•	Req Body	: 
-name: as string
-password: as string
+- URL		: /user/login 
+- Method		: POST
+- Req Body	: 
+1. name: as string
+2. password: as string
 xxx
 LOGOUT
-•	URL		: /user/logout
-•	Method		: GET 
-•	Headers	: Authorization Bearer <token>
+- URL		: /user/logout
+- Method		: GET 
+- Headers	: Authorization Bearer <token>
 xxx
 CURRENT USER DETAIL
-•	URL		: /user/current-user
-•	Method		: GET
-•	Headers	: Authorization Bearer <token>
+- URL		: /user/current-user
+- Method		: GET
+- Headers	: Authorization Bearer <token>
 xxx
 REFRESH TOKEN
-•	URL		: /user/refresh-token
-•	Method		: GET
-•	Headers	: Authorization Bearer <token>
+- URL		: /user/refresh-token
+- Method		: GET
+- Headers	: Authorization Bearer <token>
 xxx
 UPDATE USER
-•	URL		: /user/:id
-•	Method		: POST
-•	Req Body	: 
--	name: as string
--	password: as string, min 8 chars
-•	Headers	: Authorization Bearer <token>
+- URL		: /user/:id
+- Method		: POST
+- Req Body	: 
+1. name: as string
+2. password: as string, min 8 chars
+3. Headers	: Authorization Bearer <token>
 xxx
 UPDATE ADDITIONAL INFO (AGE. HEIGHT, WEIGHT)
-•	URL		: /user/:id/additional-info
-•	Method		: POST
-•	Req Body	:
--	age: as integer
--	height: as integer
--	weight: as integer
+- URL		: /user/:id/additional-info
+- Method		: POST
+- Req Body	:
+1. age: as integer
+2. height: as integer
+3. weight: as integer
 NB: Value age, height, weight otomatis 0 saat user berhasil register. Tiga data ini masuk ke table Users.
 
 
 //USER INTAKE
 
 CREATE
-•	URL		: /user-intake
-•	Method	: POST
-•	Req Body	: 
--	userId: as integer, User’s ID
--	carbohydrates: as integer
--	sugar: as integer
--	proteins: as integer
--	fat: as integer
+- URL		: /user-intake
+- Method	: POST
+- Req Body	: 
+1. userId: as integer, User’s ID
+2. carbohydrates: as integer
+3. sugar: as integer
+4. proteins: as integer
+5. fat: as integer
 xxx
 UPDATE
-•	URL		: /user-intake/:id
-•	Method	: PUT
-•	Req Body	: 
--	userId: as integer, User’s ID
--	carbohydrates: as integer
--	sugar: as integer
--	proteins: as integer
--	fat: as integer
+- URL		: /user-intake/:id
+- Method	: PUT
+- Req Body	: 
+1. userId: as integer, User’s ID
+2. carbohydrates: as integer
+3. sugar: as integer
+4. proteins: as integer
+5. fat: as integer
 xxx
 GET BY ID
-•	URL		: /user-intake/:id
-•	Method	: GET
+- URL		: /user-intake/:id
+- Method	: GET
 xxx
 GET BY USER ID
-•	URL		: /user-intake/user/:userId
-•	Method	: GET
+- URL		: /user-intake/user/:userId
+- Method	: GET
 
 # CC DEVELOPMENT STEPS
 
